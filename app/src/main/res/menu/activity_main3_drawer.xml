@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_contactos"
+            android:icon="@drawable/contact"
+            android:title="Contatos" />
+        <item
+            android:id="@+id/nav_rutastiempo"
+            android:icon="@drawable/rt"
+            android:title="Registrar rutas y tiempo" />
+        <item
+            android:id="@+id/nav_notificaciones"
+            android:icon="@drawable/notification"
+            android:title="Notificaciones" />
+
+    </group>
+
+    <item android:title="Configuración">
+        <menu>
+            <item
+                android:id="@+id/nav_actcontacto"
+                android:icon="@drawable/update"
+                android:title="Actualizar contactos" />
+
+            <item
+                android:id="@+id/nav_rutasfrecuentes"
+                android:icon="@drawable/rf"
+                android:title="Rutas frecuentes" />
+        </menu>
+    </item>
+
+</menu>

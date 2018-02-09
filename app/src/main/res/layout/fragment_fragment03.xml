@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_google_signin_btn_text_light_focused"
+    android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
+    tools:context="com.example.ismael.timeubic.Fragment01">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dip"
+            android:orientation="vertical"
+            tools:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/timePicker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="143dp"
+                android:text="Switch" />
+
+            <Button
+                android:id="@+id/Actualizar"
+                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/timePicker"
+                android:layout_alignParentBottom="true"
+                android:layout_alignStart="@+id/timePicker"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="50dp"
+                android:background="#bdefc6"
+                android:elevation="19dp"
+                android:singleLine="true"
+                android:text="Guardar"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="300dip"
+                android:layout_height="100dip"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="31dp"
+                android:headerBackground="#dd85e1f9"
+                android:numbersSelectorColor="#dd85e1f9" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

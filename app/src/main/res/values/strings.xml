@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">timeubic</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main3"></string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string-array name="valores_array">
+        <item>Elem1</item>
+        <item>Elem2</item>
+        <item>Elem3</item>
+        <item>Elem4</item>
+        <item>Elem5</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+
+</resources>
