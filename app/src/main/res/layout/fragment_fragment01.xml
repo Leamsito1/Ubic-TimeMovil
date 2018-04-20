@@ -25,7 +25,7 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/NomContacto"
                 android:layout_width="250dip"
                 android:layout_height="wrap_content"
                 android:layout_alignEnd="@+id/Actualizar"
@@ -40,36 +40,36 @@
                 android:inputType="textPostalAddress" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/CorreoContacto"
                 android:layout_width="250dip"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editText11"
-                android:layout_alignStart="@+id/editText11"
-                android:layout_below="@+id/editText11"
+                android:layout_alignLeft="@+id/NomContacto"
+                android:layout_alignStart="@+id/NomContacto"
+                android:layout_below="@+id/NomContacto"
                 android:layout_gravity="center"
                 android:ems="10"
                 android:hint="Correo electronico"
                 android:inputType="textEmailAddress" />
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/TelContacto"
                 android:layout_width="250dip"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editText9"
-                android:layout_alignStart="@+id/editText9"
-                android:layout_below="@+id/editText9"
+                android:layout_alignLeft="@+id/CorreoContacto"
+                android:layout_alignStart="@+id/CorreoContacto"
+                android:layout_below="@+id/CorreoContacto"
                 android:layout_gravity="center"
                 android:ems="10"
                 android:hint="Telefono"
                 android:inputType="phone" />
 
             <EditText
-                android:id="@+id/campo_contrasena1"
+                android:id="@+id/ContraseñaContacto"
                 android:layout_width="250dip"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/editText10"
-                android:layout_alignStart="@+id/editText10"
-                android:layout_below="@+id/editText10"
+                android:layout_alignLeft="@+id/TelContacto"
+                android:layout_alignStart="@+id/TelContacto"
+                android:layout_below="@+id/TelContacto"
                 android:layout_gravity="center"
                 android:hint="Contraseña"
                 android:inputType="textPassword"
@@ -80,7 +80,7 @@
                 style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
                 android:layout_width="300dip"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/campo_contrasena1"
+                android:layout_below="@+id/ContraseñaContacto"
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="49dp"
@@ -107,38 +107,42 @@
                 android:id="@+id/imageView8"
                 android:layout_width="25dip"
                 android:layout_height="25dip"
-                android:layout_above="@+id/editText9"
+                android:layout_above="@+id/CorreoContacto"
                 android:layout_marginEnd="11dp"
                 android:layout_marginRight="11dp"
-                android:layout_toLeftOf="@+id/editText11"
-                android:layout_toStartOf="@+id/editText11"
+                android:layout_toLeftOf="@+id/NomContacto"
+                android:layout_toStartOf="@+id/NomContacto"
+                android:backgroundTint="@color/colorPrimary"
                 android:src="@drawable/user" />
 
             <ImageView
                 android:id="@+id/imageView9"
                 android:layout_width="25dip"
                 android:layout_height="25dip"
-                android:layout_above="@+id/editText10"
+                android:layout_above="@+id/TelContacto"
                 android:layout_alignLeft="@+id/imageView8"
                 android:layout_alignStart="@+id/imageView8"
+                android:backgroundTint="@color/colorPrimary"
                 android:src="@drawable/email" />
 
             <ImageView
                 android:id="@+id/imageView10"
                 android:layout_width="25dip"
                 android:layout_height="25dip"
-                android:layout_above="@+id/campo_contrasena1"
+                android:layout_above="@+id/ContraseñaContacto"
                 android:layout_alignLeft="@+id/imageView9"
                 android:layout_alignStart="@+id/imageView9"
+                android:backgroundTint="@color/colorPrimary"
                 android:src="@drawable/phone1" />
 
             <ImageView
                 android:id="@+id/imageView11"
                 android:layout_width="25dip"
                 android:layout_height="25dip"
-                android:layout_alignBottom="@+id/campo_contrasena1"
+                android:layout_alignBottom="@+id/ContraseñaContacto"
                 android:layout_alignLeft="@+id/imageView10"
                 android:layout_alignStart="@+id/imageView10"
+                android:backgroundTint="@color/colorPrimary"
                 android:src="@drawable/privado" />
         </RelativeLayout>
     </ScrollView>

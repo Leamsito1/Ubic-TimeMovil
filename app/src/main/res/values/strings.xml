@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">timeubic</string>
+    <string name="app_name"></string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
@@ -11,14 +11,13 @@
     <string name="action_settings">Settings</string>
 
 
-    <string-array name="valores_array">
-        <item>Elem1</item>
-        <item>Elem2</item>
-        <item>Elem3</item>
-        <item>Elem4</item>
-        <item>Elem5</item>
-    </string-array>
     <string name="title_activity_maps">Map</string>
+
+    //formato de fecha y hora
+    <string name="titlulo_pickers">Obtener fecha y hora</string>
+
+    <string name="formato_fecha">dd/mm/yyyy</string>
+    <string name="formato_hora">hh:mm</string>
 
 
 </resources>

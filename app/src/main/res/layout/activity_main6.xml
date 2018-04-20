@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/america"
+    tools:context="com.example.ismael.timeubic.Main6Activity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp"
+                android:text="REGISTRO DE ACTIVIDAD"
+                android:textColorLink="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/Actividad"
+                android:layout_width="270dip"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/Salida"
+                android:layout_alignStart="@+id/Salida"
+                android:layout_below="@+id/textView3"
+                android:layout_gravity="center"
+                android:layout_marginTop="37dp"
+                android:ems="10"
+                android:hint="Nombre de la actividad"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/Salida"
+                android:layout_width="270dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/Actividad"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Salida"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/Destino"
+                android:layout_width="270dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/Salida"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Destino"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/tvDate"
+                android:layout_width="270dip"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/Destino"
+                android:layout_alignStart="@+id/Destino"
+                android:layout_below="@+id/Destino"
+                android:hint="Elije fecha"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/timePicker"
+                android:layout_width="125dip"
+                android:layout_height="40dip"
+                android:layout_alignLeft="@+id/tvDate"
+                android:layout_alignStart="@+id/tvDate"
+                android:layout_below="@+id/tvDate"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Hora de salida"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/TimeAproximado"
+                android:layout_width="125dp"
+                android:layout_height="40dip"
+                android:layout_alignEnd="@+id/tvDate"
+                android:layout_alignRight="@+id/tvDate"
+                android:layout_below="@+id/tvDate"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:hint="Aproximado"
+                android:inputType="textPostalAddress" />
+
+            <Spinner
+                android:id="@+id/opciones"
+                android:layout_width="270dp"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/timePicker"
+                android:layout_alignStart="@+id/timePicker"
+                android:layout_below="@+id/timePicker"
+                android:hint="nuemero de estaciones" />
+
+
+            <Button
+                android:id="@+id/GuardarContacto"
+                android:layout_width="300dip"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:singleLine="true"
+                android:text="Guardar contacto"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/Estacion1"
+                android:layout_width="270dp"
+                android:layout_height="300dp"
+                android:layout_alignLeft="@+id/opciones"
+                android:layout_alignStart="@+id/opciones"
+                android:layout_below="@+id/opciones"
+                android:layout_marginTop="17dp"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <EditText
+                    android:id="@+id/Actividad1"
+                    android:layout_width="270dip"
+                    android:layout_height="40dip"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="37dp"
+                    android:ems="10"
+                    android:hint="Nombre de la actividad"
+                    android:inputType="textPostalAddress" />
+
+                <EditText
+                    android:id="@+id/Salida1"
+                    android:layout_width="270dip"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/Actividad1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Salida"
+                    android:inputType="textPostalAddress" />
+
+                <EditText
+                    android:id="@+id/Destino1"
+                    android:layout_width="270dip"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/Salida1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Destino"
+                    android:inputType="textPostalAddress" />
+
+                <EditText
+                    android:id="@+id/tvDate1"
+                    android:layout_width="270dip"
+                    android:layout_height="40dip"
+                    android:layout_alignLeft="@+id/Destino1"
+                    android:hint="Elije fecha"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/timePicker1"
+                    android:layout_width="125dip"
+                    android:layout_height="40dip"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/Destino1"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:hint="Hora de salida"
+                    android:inputType="textPostalAddress" />
+
+                <EditText
+                    android:id="@+id/TimeAproximado1"
+                    android:layout_width="125dp"
+                    android:layout_height="40dip"
+                    android:layout_below="@+id/Destino1"
+                    android:layout_gravity="center"
+                    android:layout_toEndOf="@+id/timePicker1"
+                    android:layout_toRightOf="@+id/timePicker1"
+                    android:ems="10"
+                    android:hint="Aproximado"
+                    android:inputType="textPostalAddress" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

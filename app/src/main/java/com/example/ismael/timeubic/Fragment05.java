@@ -11,7 +11,7 @@ import android.widget.ImageButton;
 
 public class Fragment05 extends Fragment {
 
-    ImageButton imgButton;
+    Button agregar;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

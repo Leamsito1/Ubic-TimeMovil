@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ismael.timeubic.Main8Activity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <Spinner
+                android:id="@+id/spinnerRutas"
+                style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+                android:layout_width="250dip"
+                android:layout_height="40dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView5"
+                android:layout_marginLeft="79dp"
+                android:layout_marginStart="79dp"
+                android:layout_marginTop="22dp"
+                android:dropDownWidth="match_parent"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinnerRutas"
+                android:layout_alignStart="@+id/spinnerRutas"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="39dp"
+                android:text="Seleccioner ruta" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/spinnerRutas"
+                android:layout_alignRight="@+id/spinnerRutas"
+                android:layout_below="@+id/spinnerRutas"
+                android:layout_marginTop="25dp"
+                android:text="Añadir" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="27dp"
+                android:text="Rutas"
+                android:textColorLink="@android:color/black"
+                android:textSize="14sp" />
+
+
+            <TableLayout
+                android:id="@+id/Tabla"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="229dp"
+                android:paddingTop="55dip"
+                android:stretchColumns="1">
+
+                <TableRow
+                    android:id="@+id/Cabecera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/ColumnaActividad"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5px"
+                        android:text="Acticidad"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/ColumnaHoraInicio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="5px"
+                        android:text="Hora inicial"
+                        android:textColor="#005500"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/ColumnaAproximado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5px"
+                        android:text="Aproximado"
+                        android:textColor="#005500"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/ColumnaActDes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5px"
+                        android:text="Act/des"
+                        android:textColor="#005500"
+                        android:textSize="18sp" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/SeparadorCabecera"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <FrameLayout
+                        android:id="@+id/LineaCabecera"
+                        android:layout_width="fill_parent"
+                        android:layout_height="2px"
+                        android:layout_span="6"
+                        android:background="#FFFFFF"></FrameLayout>
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Fila1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Actividad1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:autoText="true"
+                        android:focusable="auto"
+                        android:fontFamily="sans-serif-condensed"
+                        android:foregroundTint="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="act1"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/HoraInicio1"
+                        android:layout_width="25dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="11:30"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Aproximado1"
+                        android:layout_width="25dip"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="00.40"
+                        android:textSize="20sp" />
+
+                    <Switch
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/Fila2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Actividad2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/HoraInicio2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/Aproximado2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textSize="20sp" />
+
+                </TableRow>
+
+            </TableLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

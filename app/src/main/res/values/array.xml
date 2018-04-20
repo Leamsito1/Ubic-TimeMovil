@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opciones">
+        <item>¿Cuantas estaciones tienes?</item>
+        <item>Ninguna</item>
+        <item>Una</item>
+        <item>Dos</item>
+        <item>Tres</item>
+        <item>Cuatro</item>
+        <item>Cinco</item>
+    </string-array>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ismael.timeubic.Main4Activity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dip"
+            android:orientation="vertical">
+
+            <TabHost
+                android:id="@+id/tabHost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@android:color/transparent"
+                android:backgroundTintMode="screen"
+                android:elevation="17dp"
+                android:layoutDirection="locale"
+                android:paddingTop="80dip"
+                android:persistentDrawingCache="animation|scrolling"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TabWidget
+                        android:id="@android:id/tabs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/common_google_signin_btn_text_light_focused"
+                        android:backgroundTint="#86eabd"
+                        android:orientation="horizontal"
+                        android:visibility="visible"></TabWidget>
+
+                    <FrameLayout
+                        android:id="@android:id/tabcontent"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent">
+
+                        <LinearLayout
+                            android:id="@+id/Contacto"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignBottom="@+id/tabHost"
+                            android:layout_alignLeft="@+id/tabHost"
+                            android:layout_alignStart="@+id/tabHost"
+                            android:background="@color/common_google_signin_btn_text_dark_disabled"
+                            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+                            android:focusable="auto"
+                            android:orientation="vertical">
+
+                            <Spinner
+                                android:id="@+id/spinnerContactos"
+                                style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+                                android:layout_width="250dip"
+                                android:layout_height="50dip"
+                                android:layout_above="@+id/imageView8"
+                                android:layout_alignLeft="@+id/NomContacto"
+                                android:layout_alignStart="@+id/NomContacto"
+                                android:layout_marginBottom="33dp"
+                                android:layout_marginLeft="68dip"
+                                android:layout_marginTop="50dip"
+                                android:contextClickable="true" />
+
+
+                            <EditText
+                                android:id="@+id/NomActContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignEnd="@+id/Actualizar"
+                                android:layout_alignRight="@+id/Actualizar"
+                                android:layout_below="@+id/textView3"
+                                android:layout_gravity="center"
+                                android:drawableLeft="@drawable/user"
+                                android:ems="10"
+                                android:hint="Nombre completo"
+                                android:inputType="textPostalAddress" />
+
+                            <EditText
+                                android:id="@+id/CorreoActContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/NomContacto"
+                                android:layout_alignStart="@+id/NomContacto"
+                                android:layout_below="@+id/NomContacto"
+                                android:layout_gravity="center"
+                                android:ems="10"
+                                android:hint="Correo electronico"
+                                android:drawableLeft="@drawable/email"
+                                android:inputType="textEmailAddress" />
+
+
+                            <EditText
+                                android:id="@+id/TelActContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/CorreoContacto"
+                                android:layout_alignStart="@+id/CorreoContacto"
+                                android:layout_below="@+id/CorreoContacto"
+                                android:layout_gravity="center"
+                                android:ems="10"
+                                android:hint="Telefono"
+                                android:drawableLeft="@drawable/phone"
+                                android:inputType="phone" />
+
+                            <EditText
+                                android:id="@+id/campo_contrasena"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_alignLeft="@+id/TelContacto"
+                                android:layout_alignStart="@+id/TelContacto"
+                                android:layout_below="@+id/TelContacto"
+                                android:layout_gravity="center"
+                                android:hint="Contraseña"
+                                android:drawableLeft="@drawable/password"
+                                android:inputType="textPassword"
+                                android:singleLine="true" />
+
+                            <Button
+                                android:id="@+id/ActualizarContacto"
+                                android:layout_width="300dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="16dp"
+                                android:singleLine="true"
+                                android:text="Actualizar"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/User"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@color/common_google_signin_btn_text_dark_disabled"
+                            android:backgroundTint="@color/common_google_signin_btn_text_dark_disabled"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/NomContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="55dip"
+                                android:ems="10"
+                                android:hint="Nombre completo"
+                                android:drawableLeft="@drawable/user"
+                                android:inputType="textPostalAddress" />
+
+                            <EditText
+                                android:id="@+id/CorreoContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ems="10"
+                                android:hint="Correo electronico"
+                                android:drawableLeft="@drawable/email"
+                                android:inputType="textEmailAddress" />
+
+                            <EditText
+                                android:id="@+id/TelContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:ems="10"
+                                android:hint="Telefono"
+                                android:drawableLeft="@drawable/phone"
+                                android:inputType="phone" />
+
+                            <EditText
+                                android:id="@+id/ContraseñaContacto"
+                                android:layout_width="250dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:hint="Contraseña"
+                                android:drawableLeft="@drawable/password"
+                                android:inputType="textPassword"
+                                android:singleLine="true" />
+
+                            <Button
+                                android:id="@+id/ActualizarUser"
+                                android:layout_width="300dip"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="16dp"
+                                android:singleLine="true"
+                                android:text="Actualizar"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </TabHost>
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:text="Actualizar datos"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

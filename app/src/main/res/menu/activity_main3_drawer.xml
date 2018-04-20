@@ -7,30 +7,35 @@
         <item
             android:id="@+id/nav_contactos"
             android:icon="@drawable/contact"
-            android:title="Contatos" />
+            android:title="Contactos" />
         <item
             android:id="@+id/nav_rutastiempo"
             android:icon="@drawable/rt"
-            android:title="Registrar rutas y tiempo" />
+            android:title="Rutas y Tiempo" />
         <item
-            android:id="@+id/nav_notificaciones"
-            android:icon="@drawable/notification"
-            android:title="Notificaciones" />
+            android:id="@+id/nav_registro"
+            android:icon="@drawable/rt"
+            android:title="Actividad" />
 
     </group>
 
     <item android:title="Configuración">
+        <group android:checkableBehavior="single">
         <menu>
+
             <item
                 android:id="@+id/nav_actcontacto"
                 android:icon="@drawable/update"
-                android:title="Actualizar contactos" />
+                android:title="Actualizar Datos" />
 
             <item
                 android:id="@+id/nav_rutasfrecuentes"
                 android:icon="@drawable/rf"
-                android:title="Rutas frecuentes" />
+                android:title="Rutas Frecuentes" />
+
         </menu>
+        </group>
     </item>
+
 
 </menu>

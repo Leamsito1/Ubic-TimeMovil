@@ -1,24 +1,68 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/contenedor"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/common_google_signin_btn_text_light_focused"
+    android:layout_alignParentLeft="false"
+    android:layout_alignParentRight="false"
+    android:layout_alignParentStart="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerInParent="false"
+    android:background="@color/common_google_signin_btn_text_light_pressed"
     android:backgroundTint="@color/common_google_signin_btn_text_dark_pressed"
     tools:context="com.example.ismael.timeubic.Fragment01">
 
     <!-- TODO: Update blank fragment layout -->
 
 
-    <android.support.v4.widget.NestedScrollView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:fillViewport="true">
+        android:layout_height="match_parent">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dip"
+            android:orientation="vertical">
 
-    </android.support.v4.widget.NestedScrollView>
-</RelativeLayout>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="39dp"
+                android:text="RUTAS"
+                android:textColorLink="@android:color/black"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinnerRutas"
+                android:layout_width="350dip"
+                android:layout_height="40dip"
+                android:layout_below="@+id/textView5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/spinnerRutas"
+                android:layout_alignStart="@+id/spinnerRutas"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="39dp"
+                android:text="Seleccioner ruta" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/spinnerRutas"
+                android:layout_alignRight="@+id/spinnerRutas"
+                android:layout_below="@+id/spinnerRutas"
+                android:layout_marginTop="25dp"
+                android:text="Añadir" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
